@@ -24,6 +24,9 @@ public class CartPage extends com.edts.klikindomaret.pages.PageBase
     private final String TNC1= "com.indomaret.klikindomaret:id/a7e";
     private final String TNC_BUY ="com.indomaret.klikindomaret:id/3b";
     private final String AMOUNT_GOODS = "com.indomaret.klikindomaret:id/9n3";
+    private final String PRICE = "com.indomaret.klikindomaret:id/es";
+    private final String ITEM = "com.indomaret.klikindomaret:id/9n3";
+    private final String TOTAL_AMOUNT ="com.indomaret.klikindomaret:id/fp6";
 
     public void tapCart()
 
@@ -75,4 +78,31 @@ public class CartPage extends com.edts.klikindomaret.pages.PageBase
         String amountGoods = waitAndFindById(AMOUNT_GOODS).getText();
         return  amountGoods;
     }
+
+    public String getPrice()
+    {
+        String priceElement = waitAndFindById(PRICE).getText();
+
+        return priceElement
+                .replace("Rp", "")
+                .replace(".", "")
+                .trim();
+    }
+
+    public String getItem()
+    {
+        String item = waitAndFindById(ITEM).getText();
+        return  item;
+    }
+
+    public String getAmount()
+    {
+        String amount = waitAndFindById(TOTAL_AMOUNT).getText();
+
+        return amount
+                .replace("Rp", "")
+                .replace(".", "")
+                .trim();
+    }
+
 }

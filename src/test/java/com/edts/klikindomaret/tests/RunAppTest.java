@@ -8,10 +8,12 @@ import com.edts.klikindomaret.pages.ProductPage;
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.util.Set;
 
 public class RunAppTest extends TestBase {
 
@@ -97,20 +99,21 @@ public class RunAppTest extends TestBase {
             ProductPage productPage = new ProductPage(driver);
             cartPage.tapCart();
             cartPage.typeOrder();
-
             cartPage.timeOrder();
             cartPage.timeOrderList();
             cartPage.confirmTime();
-            cartPage.scrollDown();
+            Thread.sleep(10000);
+            cartPage.scrollRecyclerViewDown();
+            System.out.println(cartPage.getPrice());
+            System.out.println(cartPage.getItem());
+            System.out.println(cartPage.getAmount());
+
+            int totalAmount = Integer.parseInt(cartPage.getPrice()) * Integer.parseInt(cartPage.getItem());
+            int actualTotalAmount = Integer.parseInt(cartPage.getAmount());
+            Assert.assertEquals(actualTotalAmount,totalAmount);
+
             cartPage.buy();
             cartPage.tapOffer();
-            cartPage.scrollDown();
-            Thread.sleep(10000);
-            cartPage.getAmount_goods();
-
-            System.out.println("HARGA" +productPrice);
-            System.out.println("JUMLAH" +cartPage.getAmount_goods());
-
         }
         catch (Exception e)
         {
@@ -122,7 +125,7 @@ public class RunAppTest extends TestBase {
     @AfterTest
     public void LogoutAndClose()
     {
-        try
+       /* try
         {
             LoginPage loginPage = new LoginPage(driver);
             loginPage.akun();
@@ -132,7 +135,7 @@ public class RunAppTest extends TestBase {
         catch (Exception e)
         {
             e.printStackTrace();
-        }
+        }*/
     }
 
 
