@@ -125,19 +125,7 @@ public class RunAppTest extends TestBase {
     @AfterTest
     public void LogoutAndClose()
     {
-       /* try
-        {
-            LoginPage loginPage = new LoginPage(driver);
-            loginPage.akun();
-            loginPage.logout();
-
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }*/
+       driver.quit();
     }
-
-
 
 }

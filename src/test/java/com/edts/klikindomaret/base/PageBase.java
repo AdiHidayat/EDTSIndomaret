@@ -101,12 +101,6 @@ public class PageBase {
 
         WebElement recyclerView = scrollables.get(0);
 
-        System.out.println("RecyclerView Position:");
-        System.out.println("X      : " + recyclerView.getRect().x);
-        System.out.println("Y      : " + recyclerView.getRect().y);
-        System.out.println("Width  : " + recyclerView.getRect().width);
-        System.out.println("Height : " + recyclerView.getRect().height);
-
         boolean canScrollMore = (Boolean) ((JavascriptExecutor) driver)
                 .executeScript(
                         "mobile: scrollGesture",
