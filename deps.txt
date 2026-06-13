@@ -1,0 +1,65 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.edts:EDTSIndomaret >-----------------------
+[INFO] Building EDTSIndomaret 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.7.0:tree (default-cli) @ EDTSIndomaret ---
+[INFO] com.edts:EDTSIndomaret:jar:1.0-SNAPSHOT
+[INFO] +- io.appium:java-client:jar:8.5.1:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-api:jar:4.44.0:compile
+[INFO] |  |  \- org.jspecify:jspecify:jar:1.0.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-remote-driver:jar:4.44.0:compile
+[INFO] |  |  +- com.google.auto.service:auto-service-annotations:jar:1.1.1:compile
+[INFO] |  |  +- com.google.guava:guava:jar:33.6.0-jre:compile
+[INFO] |  |  |  +- com.google.guava:failureaccess:jar:1.0.3:compile
+[INFO] |  |  |  +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[INFO] |  |  |  +- com.google.errorprone:error_prone_annotations:jar:2.47.0:compile
+[INFO] |  |  |  \- com.google.j2objc:j2objc-annotations:jar:3.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-api:jar:1.62.0:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-context:jar:1.62.0:compile
+[INFO] |  |  |  \- io.opentelemetry:opentelemetry-common:jar:1.62.0:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-exporter-logging:jar:1.62.0:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-common:jar:1.62.0:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-extension-autoconfigure-spi:jar:1.62.0:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-extension-autoconfigure:jar:1.62.0:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-trace:jar:1.62.0:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk:jar:1.62.0:compile
+[INFO] |  |  |  +- io.opentelemetry:opentelemetry-sdk-metrics:jar:1.62.0:compile
+[INFO] |  |  |  \- io.opentelemetry:opentelemetry-sdk-logs:jar:1.62.0:compile
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.18.8-jdk5:compile
+[INFO] |  |  +- org.seleniumhq.selenium:selenium-http:jar:4.44.0:compile
+[INFO] |  |  +- org.seleniumhq.selenium:selenium-json:jar:4.44.0:compile
+[INFO] |  |  +- org.seleniumhq.selenium:selenium-manager:jar:4.44.0:compile
+[INFO] |  |  \- org.seleniumhq.selenium:selenium-os:jar:4.44.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-support:jar:4.44.0:compile
+[INFO] |  +- com.google.code.gson:gson:jar:2.10.1:runtime
+[INFO] |  +- commons-validator:commons-validator:jar:1.7:runtime
+[INFO] |  |  +- commons-beanutils:commons-beanutils:jar:1.9.4:runtime
+[INFO] |  |  +- commons-digester:commons-digester:jar:2.1:runtime
+[INFO] |  |  +- commons-logging:commons-logging:jar:1.2:runtime
+[INFO] |  |  \- commons-collections:commons-collections:jar:3.2.2:runtime
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.12.0:runtime
+[INFO] |  +- commons-io:commons-io:jar:2.12.0:runtime
+[INFO] |  \- org.slf4j:slf4j-api:jar:2.0.7:runtime
+[INFO] +- org.seleniumhq.selenium:selenium-java:jar:4.11.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-chrome-driver:jar:4.11.0:compile
+[INFO] |  |  \- org.seleniumhq.selenium:selenium-chromium-driver:jar:4.11.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-devtools-v113:jar:4.11.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-devtools-v114:jar:4.11.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-devtools-v115:jar:4.11.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-devtools-v85:jar:4.11.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-edge-driver:jar:4.11.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-firefox-driver:jar:4.11.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-ie-driver:jar:4.11.0:compile
+[INFO] |  \- org.seleniumhq.selenium:selenium-safari-driver:jar:4.11.0:compile
+[INFO] \- org.testng:testng:jar:7.10.2:test
+[INFO]    +- com.beust:jcommander:jar:1.82:test
+[INFO]    \- org.webjars:jquery:jar:3.7.1:test
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.432 s
+[INFO] Finished at: 2026-06-13T04:57:28+07:00
+[INFO] ------------------------------------------------------------------------
